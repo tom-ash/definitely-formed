@@ -16,6 +16,12 @@
     "url": "https://github.com/tom-ash/definitely-formed/issues"
   },
   "homepage": "https://github.com/tom-ash/definitely-formed#readme",
+  "dependencies": {
+    "@babel/core": "^7.20.5",
+    "@babel/preset-react": "^7.18.6",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0"
+  },
   "devDependencies": {
     "typescript": "^5.2.2"
   }
