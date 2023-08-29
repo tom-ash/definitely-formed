@@ -23,4 +23,21 @@ describe("Text Input", () => {
       });
     });
   });
+
+  describe("controlled input", () => {
+    describe("when value and onChange callback are provided", () => {
+      test("renders with the provided value and callback", () => {
+        const component = renderer.create(
+          <TextInput
+            label={"Test"}
+            value="test"
+            onChange={newValue => console.log(newValue)}
+          />
+        );
+
+        const tree = component.toJSON();
+        expect(tree).toMatchSnapshot();
+      });
+    });
+  });
 });

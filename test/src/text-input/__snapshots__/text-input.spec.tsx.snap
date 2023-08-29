@@ -1,5 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Text Input controlled input when value and onChange callback are provided renders with the provided value and callback 1`] = `
+<div>
+  <label>
+    Test
+  </label>
+  <input
+    onChange={[Function]}
+    type="text"
+    value="test"
+  />
+</div>
+`;
+
 exports[`Text Input label when the provided label is ReactElement renders with the provided label 1`] = `
 <div>
   <label>
