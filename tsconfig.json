@@ -9,7 +9,10 @@
     "moduleResolution": "node",
     "sourceMap": true,
     "outDir": "dist",
+    "declaration": true,
+    "declarationMap": true,
     "allowUnreachableCode": false
   },
+  "include": ["src/index.ts"],
   "lib": ["es2015"]
 }
