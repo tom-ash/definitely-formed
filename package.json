@@ -5,6 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc -b .",
+    "prettier": "prettier . --write",
     "test": "jest"
   },
   "repository": {
@@ -31,6 +32,7 @@
     "@types/react-test-renderer": "^18.0.0",
     "babel-jest": "^29.6.4",
     "jest": "^29.6.4",
+    "prettier": "3.0.2",
     "react-test-renderer": "^16.4.0",
     "typescript": "^5.2.2"
   }
