@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Text Input label when the provided label is ReactElement renders with the provided label 1`] = `
+<div>
+  <label>
+    <div>
+      Test
+    </div>
+  </label>
+  <input
+    type="text"
+  />
+</div>
+`;
+
+exports[`Text Input label when the provided label is string renders with the provided label 1`] = `
+<div>
+  <label>
+    Test
+  </label>
+  <input
+    type="text"
+  />
+</div>
+`;
