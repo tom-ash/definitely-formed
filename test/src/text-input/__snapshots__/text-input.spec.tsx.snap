@@ -28,6 +28,18 @@ exports[`Text Input controlled input when value and onChange callback are provid
 </div>
 `;
 
+exports[`Text Input id when id is provided renders with the provided id 1`] = `
+<div>
+  <label>
+    Test
+  </label>
+  <input
+    id="test"
+    type="text"
+  />
+</div>
+`;
+
 exports[`Text Input label when the provided label is ReactElement renders with the provided label 1`] = `
 <div>
   <label>

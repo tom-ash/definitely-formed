@@ -2,6 +2,7 @@ import React, { ChangeEvent } from "react";
 interface TextInputInterface {
     (props: {
         label: string | React.ReactElement;
+        id?: string;
         value?: string;
         onChange?(newValue: string, changeEvent?: ChangeEvent): void;
         containerClassName?: string;

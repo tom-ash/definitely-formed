@@ -7,7 +7,7 @@ describe("Text Input", () => {
   describe("label", () => {
     describe("when the provided label is string", () => {
       test("renders with the provided label", () => {
-        const component = renderer.create(<TextInput label={"Test"} />);
+        const component = renderer.create(<TextInput label="Test" />);
 
         const tree = component.toJSON();
         expect(tree).toMatchSnapshot();
@@ -29,7 +29,7 @@ describe("Text Input", () => {
       test("renders with the provided value and callback", () => {
         const component = renderer.create(
           <TextInput
-            label={"Test"}
+            label="Test"
             value="test"
             onChange={newValue => console.log(newValue)}
           />
@@ -46,10 +46,26 @@ describe("Text Input", () => {
       test("renders with the provided containerClassName", () => {
         const component = renderer.create(
           <TextInput
-            label={"Test"}
+            label="Test"
             value="test"
             onChange={newValue => console.log(newValue)}
-            containerClassName={"test"}
+            containerClassName="test"
+          />
+        );
+
+        const tree = component.toJSON();
+        expect(tree).toMatchSnapshot();
+      });
+    });
+  });
+
+  describe("id", () => {
+    describe("when id is provided", () => {
+      test("renders with the provided id", () => {
+        const component = renderer.create(
+          <TextInput
+            id="test"
+            label="Test"
           />
         );
 
