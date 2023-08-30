@@ -4,6 +4,7 @@ interface TextInputInterface {
         label: string | React.ReactElement;
         value?: string;
         onChange?(newValue: string, changeEvent?: ChangeEvent): void;
+        containerClassName?: string;
     }): React.ReactElement;
 }
 export declare const TextInput: TextInputInterface;

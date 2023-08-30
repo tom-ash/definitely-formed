@@ -5,19 +5,20 @@ interface TextInputInterface {
     label: string | React.ReactElement;
     value?: string;
     onChange?(newValue: string, changeEvent?: ChangeEvent): void;
+    containerClassName?: string;
   }): React.ReactElement;
 }
 
 export const TextInput: TextInputInterface = props => {
-  const { label, value, onChange } = props;
+  const { label, value, onChange, containerClassName } = props;
 
   return (
-    <div>
+    <div className={containerClassName}>
       <label>{label}</label>
       <input
         type="text"
         value={value}
-        onChange={onChange ? (e) => onChange(e.target.value, e) : undefined}
+        onChange={onChange ? e => onChange(e.target.value, e) : undefined}
       />
     </div>
   );

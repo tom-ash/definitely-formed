@@ -1,5 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Text Input containerClassName when containerClassName is provided renders with the provided containerClassName 1`] = `
+<div
+  className="test"
+>
+  <label>
+    Test
+  </label>
+  <input
+    onChange={[Function]}
+    type="text"
+    value="test"
+  />
+</div>
+`;
+
 exports[`Text Input controlled input when value and onChange callback are provided renders with the provided value and callback 1`] = `
 <div>
   <label>

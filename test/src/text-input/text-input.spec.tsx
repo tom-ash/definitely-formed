@@ -40,4 +40,22 @@ describe("Text Input", () => {
       });
     });
   });
+
+  describe("containerClassName", () => {
+    describe("when containerClassName is provided", () => {
+      test("renders with the provided containerClassName", () => {
+        const component = renderer.create(
+          <TextInput
+            label={"Test"}
+            value="test"
+            onChange={newValue => console.log(newValue)}
+            containerClassName={"test"}
+          />
+        );
+
+        const tree = component.toJSON();
+        expect(tree).toMatchSnapshot();
+      });
+    });
+  });
 });
