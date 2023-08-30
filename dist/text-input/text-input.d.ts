@@ -6,6 +6,7 @@ interface TextInputInterface {
         value?: string;
         onChange?(newValue: string, changeEvent?: ChangeEvent): void;
         containerClassName?: string;
+        disabled?: boolean;
     }): React.ReactElement;
 }
 export declare const TextInput: TextInputInterface;

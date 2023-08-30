@@ -7,11 +7,12 @@ interface TextInputInterface {
     value?: string;
     onChange?(newValue: string, changeEvent?: ChangeEvent): void;
     containerClassName?: string;
+    disabled?: boolean;
   }): React.ReactElement;
 }
 
 export const TextInput: TextInputInterface = props => {
-  const { label, id, value, onChange, containerClassName } = props;
+  const { label, id, value, onChange, containerClassName, disabled } = props;
 
   return (
     <div className={containerClassName}>
@@ -19,6 +20,7 @@ export const TextInput: TextInputInterface = props => {
       <input
         type="text"
         id={id}
+        disabled={disabled}
         value={value}
         onChange={onChange ? e => onChange(e.target.value, e) : undefined}
       />

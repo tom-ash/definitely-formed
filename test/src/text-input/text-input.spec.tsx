@@ -74,4 +74,20 @@ describe("Text Input", () => {
       });
     });
   });
+
+  describe("disabled", () => {
+    describe("when disabled is provided", () => {
+      test("renders with the provided disabled", () => {
+        const component = renderer.create(
+          <TextInput
+            disabled={true}
+            label="Test"
+          />
+        );
+
+        const tree = component.toJSON();
+        expect(tree).toMatchSnapshot();
+      });
+    });
+  });
 });
